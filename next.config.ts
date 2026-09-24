@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: "/jayesh-singh",
+  assetPrefix: "/jayesh-singh",
   reactStrictMode: true,
   eslint: {
     // Type checking and TS strictness still run during `next build`;
