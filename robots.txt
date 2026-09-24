@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://jayesh-singh.vercel.app
+Sitemap: https://jayesh-singh.vercel.app/sitemap.xml
