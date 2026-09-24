@@ -13,6 +13,7 @@ type MagneticButtonProps = {
   href?: string;
   target?: string;
   rel?: string;
+  download?: boolean;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
   onClick?: () => void;
@@ -27,6 +28,7 @@ export function MagneticButton({
   href,
   target,
   rel,
+  download,
   type,
   disabled,
   onClick,
@@ -62,6 +64,7 @@ export function MagneticButton({
     ...(href !== undefined && { href }),
     ...(target !== undefined && { target }),
     ...(rel !== undefined && { rel }),
+    ...(download !== undefined && { download }),
     ...(type !== undefined && { type }),
     ...(disabled !== undefined && { disabled }),
     ...(onClick !== undefined && { onClick }),

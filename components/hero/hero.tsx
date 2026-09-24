@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import gsap from "gsap";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download } from "lucide-react";
 import { useReducedMotion } from "@/lib/hooks/use-reduced-motion";
 import { MagneticButton } from "@/components/ui/magnetic-button";
 
@@ -164,6 +164,15 @@ export function Hero() {
             >
               VIEW SELECTED WORK
               <ArrowDown size={16} className="transition-transform duration-300 group-hover:translate-y-0.5" />
+            </MagneticButton>
+            <MagneticButton
+              as="a"
+              href="/jayesh-singh/Jayesh_Singh_Resume.pdf"
+              download
+              className="group flex items-center gap-3 border border-fg/20 px-7 py-4 text-sm font-medium text-fg transition-colors hover:border-accent hover:text-accent"
+            >
+              <Download size={16} className="transition-transform duration-300 group-hover:translate-y-0.5" />
+              DOWNLOAD RESUME
             </MagneticButton>
             <MagneticButton
               as="a"
