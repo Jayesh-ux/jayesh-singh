@@ -4,8 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ArrowDown, ArrowUpRight, Download } from "lucide-react";
+import { useMediaQuery } from "@/lib/hooks/use-media-query";
 import { useReducedMotion } from "@/lib/hooks/use-reduced-motion";
+import { supportsWebGL } from "@/lib/utils";
 import { MagneticButton } from "@/components/ui/magnetic-button";
+import { ErrorBoundary } from "@/components/ui/error-boundary";
 
 const SystemCanvas = dynamic(
   () => import("@/components/three/system-canvas"),
@@ -28,15 +31,21 @@ export function Hero() {
   const descRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const [showCanvas, setShowCanvas] = useState(false);
+  const [webglAvailable, setWebglAvailable] = useState(false);
   const reduced = useReducedMotion();
 
   useEffect(() => {
+    setWebglAvailable(supportsWebGL());
+  }, []);
+
+  useEffect(() => {
+    if (!webglAvailable) return;
     const ready = () => {
       setShowCanvas(true);
     };
     window.addEventListener("site:ready", ready);
     return () => window.removeEventListener("site:ready", ready);
-  }, []);
+  }, [webglAvailable]);
 
   useEffect(() => {
     if (reduced) {
@@ -111,10 +120,16 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 opacity-0"
         aria-hidden="true"
       >
-        {showCanvas ? (
-          <div className="absolute inset-0 scale-[1.15]">
-            <SystemCanvas />
-          </div>
+        {showCanvas && webglAvailable ? (
+          <ErrorBoundary key={`webgl-${webglAvailable}`}
+            fallback={
+              <div className="absolute inset-0 grid-bg opacity-40 mask-fade-b" />
+            }
+          >
+            <div className="absolute inset-0 scale-[1.15]">
+              <SystemCanvas />
+            </div>
+          </ErrorBoundary>
         ) : (
           <div className="absolute inset-0 grid-bg opacity-40 mask-fade-b" />
         )}

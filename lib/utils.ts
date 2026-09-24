@@ -19,6 +19,19 @@ export function isTouchDevice() {
   return window.matchMedia("(hover: none), (pointer: coarse)").matches;
 }
 
+export function supportsWebGL() {
+  if (typeof window === "undefined") return false;
+  try {
+    const canvas = document.createElement("canvas");
+    return !!(
+      window.WebGLRenderingContext &&
+      (canvas.getContext("webgl2") || canvas.getContext("webgl"))
+    );
+  } catch {
+    return false;
+  }
+}
+
 export function easeInOutQuart(t: number) {
   return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
 }
