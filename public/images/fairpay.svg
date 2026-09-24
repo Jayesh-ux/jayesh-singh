@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e3db"/>
+      <stop offset="1" stop-color="#d8d6cb"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f1f0e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g stroke="#1e1e1e" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 100h1600M0 200h1600M0 300h1600M0 400h1600M0 500h1600M0 600h1600M0 700h1600M0 800h1600M0 900h1600"/>
+    <path d="M100 0v1000M200 0v1000M300 0v1000M400 0v1000M500 0v1000M600 0v1000M700 0v1000M800 0v1000M900 0v1000M1000 0v1000M1100 0v1000M1200 0v1000M1300 0v1000M1400 0v1000M1500 0v1000"/>
+  </g>
+  <text x="60" y="82" font-size="22" letter-spacing="6" fill="#87836f" fill-opacity="0.9">SYS://SAMPLE — FAIRPAY</text>
+  <text x="1540" y="82" font-size="22" text-anchor="end" letter-spacing="4" fill="#87836f">FIG / 01</text>
+
+  <g stroke="#00a0b8" stroke-width="6" fill="none">
+    <path d="M60 120h70v70"/>
+    <path d="M1540 120h-70v70"/>
+    <path d="M60 880h70v-70"/>
+    <path d="M1540 880h-70v-70"/>
+  </g>
+
+  <text x="800" y="330" font-size="180" text-anchor="middle" font-weight="600" letter-spacing="-6" fill="#1e1e1e" fill-opacity="0.05">FAIRPAY</text>
+
+  <g font-size="20" letter-spacing="3">
+    <g>
+      <rect x="150" y="430" width="280" height="150" rx="6" fill="url(#panel)" stroke="#d3ccb8"/>
+      <circle cx="210" cy="480" r="10" fill="#00a0b8"/>
+      <text x="240" y="488" fill="#1e1e1e">SELLER</text>
+      <text x="240" y="520" fill="#87836f" font-size="16">ORDER CREATED</text>
+    </g>
+    <g>
+      <rect x="500" y="430" width="280" height="150" rx="6" fill="url(#panel)" stroke="#d3ccb8"/>
+      <circle cx="560" cy="480" r="10" fill="#00a0b8"/>
+      <text x="590" y="488" fill="#1e1e1e">ESCROW</text>
+      <text x="590" y="520" fill="#87836f" font-size="16">OWNERSHIP TRACKED</text>
+    </g>
+    <g>
+      <rect x="850" y="430" width="280" height="150" rx="6" fill="url(#panel)" stroke="#d3ccb8"/>
+      <circle cx="910" cy="480" r="10" fill="#00a0b8"/>
+      <text x="940" y="488" fill="#1e1e1e">BUYER</text>
+      <text x="940" y="520" fill="#87836f" font-size="16">CODELESS FLOW</text>
+    </g>
+    <rect x="1190" y="430" width="250" height="150" rx="6" fill="#1e1e1e"/>
+    <circle cx="1240" cy="480" r="10" fill="none" stroke="#00a0b8" stroke-width="3"/>
+    <text x="1260" y="488" fill="#ffffff">PAY OUT</text>
+    <text x="1260" y="520" fill="#a9a69a" font-size="16">0% PLATFORM FEE</text>
+  </g>
+
+  <g stroke="#d3ccb8" stroke-width="3" stroke-dasharray="6 12" fill="none">
+    <path d="M430 505h70"/>
+    <path d="M780 505h70"/>
+    <path d="M1130 505h60"/>
+  </g>
+
+  <rect x="150" y="680" width="1290" height="200" rx="6" fill="#ffffff" fill-opacity="0.6" stroke="#d3ccb8"/>
+  <text x="210" y="755" font-size="26" letter-spacing="4" fill="#87836f">VOLUME</text>
+  <g fill="#00a0b8">
+    <rect x="210" y="770" width="46" height="50" rx="4"/>
+    <rect x="286" y="750" width="46" height="70" rx="4"/>
+    <rect x="362" y="735" width="46" height="85" rx="4"/>
+    <rect x="438" y="720" width="46" height="100" rx="4"/>
+    <rect x="514" y="700" width="46" height="120" rx="4"/>
+    <rect x="590" y="690" width="46" height="130" rx="4"/>
+  </g>
+  <text x="700" y="755" font-size="26" letter-spacing="4" fill="#1e1e1e">MO. TRANSACTIONS</text>
+  <text x="700" y="790" font-size="22" fill="#87836f">700+ CLIENTS · PAYMENTS AUTOMATED</text>
+
+  <text x="60" y="952" font-size="18" letter-spacing="4" fill="#87836f">PLACEHOLDER — WILL BE REPLACED WITH REAL CASE PHOTOGRAPHY</text>
+  <text x="1540" y="952" font-size="18" text-anchor="end" letter-spacing="4" fill="#87836f">VISIBLE SYSTEMS</text>
+</svg>

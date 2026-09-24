@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e3db"/>
+      <stop offset="1" stop-color="#d8d6cb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="60" y="82" font-size="22" letter-spacing="6" fill="#87836f" fill-opacity="0.9">SYS://SAMPLE — RECRUITMENT SUITE</text>
+  <text x="1540" y="82" font-size="22" text-anchor="end" letter-spacing="4" fill="#87836f">FIG / 06</text>
+  <g stroke="#00a0b8" stroke-width="6" fill="none">
+    <path d="M60 120h70v70"/>
+    <path d="M1540 120h-70v70"/>
+    <path d="M60 880h70v-70"/>
+    <path d="M1540 880h-70v-70"/>
+  </g>
+
+  <text x="800" y="330" font-size="150" text-anchor="middle" font-weight="600" letter-spacing="-6" fill="#1e1e1e" fill-opacity="0.05">SUITE</text>
+
+  <g stroke="#d3ccb8" stroke-width="2" stroke-dasharray="6 12" fill="none">
+    <path d="M350 400 L 720 520"/>
+    <path d="M1250 400 L 880 520"/>
+    <path d="M350 700 L 720 580"/>
+    <path d="M1250 700 L 880 580"/>
+  </g>
+
+  <g stroke="#00a0b8" stroke-width="3" fill="none" stroke-dasharray="4 8">
+    <path d="M800 440 L 800 520"/>
+    <path d="M800 660 L 800 580"/>
+    <path d="M620 520 L 720 520"/>
+    <path d="M980 520 L 880 520"/>
+  </g>
+
+  <g font-size="20" letter-spacing="2">
+    <g>
+      <rect x="170" y="330" width="250" height="140" fill="#ffffff" stroke="#d3ccb8"/>
+      <circle cx="230" cy="400" r="26" fill="#00a0b8"/>
+      <text x="230" y="408" text-anchor="middle" fill="#f4f7ff" font-size="22">R</text>
+      <text x="285" y="390" fill="#1e1e1e">RECRUIT</text>
+      <text x="285" y="420" font-size="15" fill="#87836f">applicant hub</text>
+    </g>
+    <g>
+      <rect x="680" y="300" width="240" height="140" fill="#ffffff" stroke="#d3ccb8"/>
+      <circle cx="740" cy="370" r="26" fill="#00a0b8"/>
+      <text x="740" y="378" text-anchor="middle" fill="#f4f7ff" font-size="22">T</text>
+      <text x="795" y="360" fill="#1e1e1e">TRUSTLAYER</text>
+      <text x="795" y="390" font-size="15" fill="#87836f">verification</text>
+    </g>
+    <g>
+      <rect x="1180" y="330" width="250" height="140" fill="#ffffff" stroke="#d3ccb8"/>
+      <circle cx="1240" cy="400" r="26" fill="#00a0b8"/>
+      <text x="1240" y="408" text-anchor="middle" fill="#f4f7ff" font-size="22">O</text>
+      <text x="1295" y="390" fill="#1e1e1e">OFFERGHOST</text>
+      <text x="1295" y="420" font-size="15" fill="#87836f">offers</text>
+    </g>
+    <g>
+      <rect x="680" y="610" width="240" height="140" fill="#ffffff" stroke="#d3ccb8"/>
+      <circle cx="740" cy="680" r="26" fill="#00a0b8"/>
+      <text x="740" y="688" text-anchor="middle" fill="#f4f7ff" font-size="22">H</text>
+      <text x="795" y="670" fill="#1e1e1e">HIRE2ONBOARD</text>
+      <text x="795" y="700" font-size="15" fill="#87836f">onboarding</text>
+    </g>
+  </g>
+
+  <circle cx="800" cy="560" r="150" fill="#d7f2f2" stroke="#00a0b8" stroke-width="2"/>
+  <circle cx="800" cy="560" r="110" fill="none" stroke="#00a0b8" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="8 12"/>
+  <text x="800" y="540" text-anchor="middle" font-size="24" letter-spacing="3" fill="#1e1e1e">SHARED</text>
+  <text x="800" y="575" text-anchor="middle" font-size="24" letter-spacing="3" fill="#1e1e1e">CORE</text>
+  <text x="800" y="640" text-anchor="middle" font-size="16" letter-spacing="2" fill="#87836f">AUTH · DATA · FLOW</text>
+
+  <rect x="560" y="820" width="480" height="60" fill="#1e1e1e"/>
+  <text x="800" y="858" text-anchor="middle" font-size="20" letter-spacing="4" fill="#f4f7ff">400+ SIGNUPS / DAY</text>
+
+  <text x="60" y="952" font-size="18" letter-spacing="4" fill="#87836f">ONE CODEBASE · FOUR SURFACES</text>
+  <text x="1540" y="952" font-size="18" text-anchor="end" letter-spacing="4" fill="#87836f">PLACEHOLDER VISUAL</text>
+</svg>

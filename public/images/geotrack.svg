@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e3db"/>
+      <stop offset="1" stop-color="#d8d6cb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="60" y="82" font-size="22" letter-spacing="6" fill="#87836f" fill-opacity="0.9">SYS://SAMPLE — GEOTRACK</text>
+  <text x="1540" y="82" font-size="22" text-anchor="end" letter-spacing="4" fill="#87836f">FIG / 02</text>
+  <g stroke="#00a0b8" stroke-width="6" fill="none">
+    <path d="M60 120h70v70"/>
+    <path d="M1540 120h-70v70"/>
+    <path d="M60 880h70v-70"/>
+    <path d="M1540 880h-70v-70"/>
+  </g>
+
+  <text x="800" y="330" font-size="180" text-anchor="middle" font-weight="600" letter-spacing="-6" fill="#1e1e1e" fill-opacity="0.05">GEOTRACK</text>
+
+  <g stroke="#1e1e1e" stroke-opacity="0.08" stroke-width="1">
+    <path d="M300 0v1000M400 0v1000M500 0v1000M600 0v1000M700 0v1000M800 0v1000M900 0v1000M1000 0v1000M1100 0v1000M1200 0v1000M1300 0v1000M1400 0v1000"/>
+    <path d="M0 300h1600M0 400h1600M0 500h1600M0 600h1600M0 700h1600"/>
+  </g>
+
+  <g fill="#d9d3c0">
+    <path d="M340 620c-40-50-20-120 60-150 70-26 130 6 150 60 30 80 10 150-60 170-60 18-110-30-150-80z"/>
+    <path d="M560 560c-20-60 30-130 110-130 90 0 150 60 140 140-10 90-90 120-150 90-60-30-110-40-100-100z"/>
+    <path d="M820 640c-10-70 50-130 130-110 90 24 140 100 110 180-30 80-120 100-180 40-50-50-70-70-60-110z"/>
+    <path d="M1080 300c-40-40-30-110 40-120 80-10 130 50 110 130-20 70-90 80-150 40v-50z"/>
+  </g>
+
+  <path d="M370 640 L 470 550 L 560 600 L 700 520 L 840 620 L 980 520 L 1150 580 L 1280 430"
+        fill="none" stroke="#d3ccb8" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M370 640 L 470 550 L 560 600 L 700 520 L 840 620 L 980 520 L 1150 580 L 1280 430"
+        fill="none" stroke="#00a0b8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <circle cx="370" cy="640" r="22" fill="#00a0b8" stroke="#e3e3db" stroke-width="6"/>
+    <circle cx="370" cy="640" r="34" fill="none" stroke="#00a0b8" stroke-opacity="0.35" stroke-width="3"/>
+    <circle cx="370" cy="640" r="46" fill="none" stroke="#00a0b8" stroke-opacity="0.18" stroke-width="3"/>
+    <text x="370" y="640" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="600">A</text>
+    <text x="412" y="628" font-size="22" fill="#1e1e1e">START</text>
+  </g>
+  <g>
+    <circle cx="1280" cy="430" r="22" fill="#1e1e1e"/>
+    <circle cx="1280" cy="430" r="34" fill="none" stroke="#00a0b8" stroke-opacity="0.35" stroke-width="3"/>
+    <circle cx="1280" cy="430" r="46" fill="none" stroke="#00a0b8" stroke-opacity="0.18" stroke-width="3"/>
+    <text x="1280" y="430" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="600">B</text>
+    <text x="1222" y="418" font-size="22" fill="#1e1e1e">END</text>
+  </g>
+
+  <g fill="#00a0b8">
+    <circle cx="470" cy="550" r="9"/>
+    <circle cx="700" cy="520" r="9"/>
+    <circle cx="840" cy="620" r="9"/>
+    <circle cx="980" cy="520" r="9"/>
+    <circle cx="1150" cy="580" r="9"/>
+  </g>
+
+  <g>
+    <circle cx="200" cy="430" r="60" fill="none" stroke="#00a0b8" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="10 14"/>
+    <text x="200" y="530" text-anchor="middle" font-size="20" letter-spacing="3" fill="#1e1e1e">GEOFENCE</text>
+    <text x="200" y="558" text-anchor="middle" font-size="18" fill="#87836f">R = 2KM</text>
+  </g>
+
+  <g font-size="20">
+    <rect x="1350" y="760" width="190" height="150" fill="#ffffff" opacity="0.7" stroke="#d3ccb8"/>
+    <text x="1375" y="800" font-size="18" letter-spacing="3" fill="#87836f">LAT LONG</text>
+    <text x="1375" y="830" letter-spacing="2" fill="#1e1e1e">19.0759 / 72.8777</text>
+    <text x="1375" y="865" fill="#00a0b8">PROXIMITY ✓</text>
+    <text x="1375" y="890" fill="#87836f" font-size="14">CACHE HIT</text>
+  </g>
+
+  <text x="60" y="952" font-size="18" letter-spacing="4" fill="#87836f">POSTGIS ROUTE INDEX · LIVE GPS · 40% MAP-API SAVINGS</text>
+  <text x="1540" y="952" font-size="18" text-anchor="end" letter-spacing="4" fill="#87836f">PLACEHOLDER VISUAL</text>
+</svg>

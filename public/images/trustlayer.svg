@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e3db"/>
+      <stop offset="1" stop-color="#d8d6cb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="60" y="82" font-size="22" letter-spacing="6" fill="#87836f" fill-opacity="0.9">SYS://SAMPLE — TRUSTLAYER</text>
+  <text x="1540" y="82" font-size="22" text-anchor="end" letter-spacing="4" fill="#87836f">FIG / 05</text>
+  <g stroke="#4dd9e0" stroke-width="6" fill="none">
+    <path d="M60 120h70v70"/>
+    <path d="M1540 120h-70v70"/>
+    <path d="M60 880h70v-70"/>
+    <path d="M1540 880h-70v-70"/>
+  </g>
+
+  <text x="800" y="330" font-size="150" text-anchor="middle" font-weight="600" letter-spacing="-6" fill="#1e1e1e" fill-opacity="0.05">TRUSTLAYER</text>
+
+  <g fill="none" stroke="#d3ccb8" stroke-width="2">
+    <circle cx="620" cy="540" r="200"/>
+    <circle cx="620" cy="540" r="150"/>
+    <circle cx="620" cy="540" r="100"/>
+  </g>
+
+  <g stroke="#4dd9e0" stroke-width="2" stroke-dasharray="6 12" fill="none">
+    <circle cx="620" cy="540" r="170"/>
+    <circle cx="620" cy="540" r="120"/>
+    <circle cx="620" cy="540" r="70"/>
+  </g>
+
+  <g stroke="#1e1e1e" stroke-width="3" stroke-dasharray="1 0" fill="none">
+    <path d="M620 260 L620 200"/>
+    <path d="M830 400 L870 370"/>
+    <path d="M410 400 L370 370"/>
+    <path d="M810 700 L860 740"/>
+    <path d="M430 700 L380 740"/>
+  </g>
+  <g font-size="20" letter-spacing="3">
+    <text x="620" y="180" text-anchor="middle" fill="#1e1e1e">GPS / SESSION</text>
+    <text x="920" y="360" fill="#1e1e1e">SCREENING UI</text>
+    <text x="320" y="360" text-anchor="end" fill="#1e1e1e">VENDOR REVIEW</text>
+    <text x="900" y="770" fill="#1e1e1e">DOCUMENTS</text>
+    <text x="340" y="770" text-anchor="end" fill="#1e1e1e">VERIFY CHAIN</text>
+  </g>
+
+  <g stroke="#4dd9e0" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M620 340 L620 275"/>
+    <path d="M755 425 L700 460"/>
+    <path d="M485 425 L540 460"/>
+    <path d="M700 638 L760 690"/>
+    <path d="M540 638 L480 690"/>
+  </g>
+
+  <g>
+    <circle cx="620" cy="540" r="64" fill="#1e1e1e"/>
+    <path d="M620 500 l40 22 -40 22 -40-22z" fill="#4dd9e0"/>
+    <circle cx="620" cy="512" r="12" fill="#4dd9e0" fill-opacity="0.25"/>
+    <circle cx="560" cy="520" r="9" fill="none" stroke="#f4f7ff" stroke-width="2"/>
+    <circle cx="620" cy="540" r="9" fill="none" stroke="#f4f7ff" stroke-width="2"/>
+    <circle cx="680" cy="520" r="9" fill="none" stroke="#f4f7ff" stroke-width="2"/>
+    <text x="620" y="632" text-anchor="middle" font-size="22" letter-spacing="4" fill="#1e1e1e">VERIFIED</text>
+    <text x="620" y="662" text-anchor="middle" font-size="18" letter-spacing="3" fill="#4dd9e0">PASS</text>
+  </g>
+
+  <g font-size="20">
+    <rect x="960" y="380" width="540" height="300" fill="#ffffff" stroke="#d3ccb8" stroke-width="2"/>
+    <g>
+      <text x="1000" y="440" font-size="18" letter-spacing="3" fill="#87836f">SMART CONTRACT</text>
+      <rect x="1000" y="460" width="460" height="6" fill="#d3ccb8"/>
+      <rect x="1000" y="460" width="360" height="6" fill="#4dd9e0"/>
+    </g>
+    <g>
+      <text x="1000" y="500" font-size="18" letter-spacing="3" fill="#87836f">REPUTATION</text>
+      <rect x="1000" y="520" width="460" height="6" fill="#d3ccb8"/>
+      <rect x="1000" y="520" width="430" height="6" fill="#4dd9e0"/>
+    </g>
+    <g>
+      <text x="1000" y="560" font-size="18" letter-spacing="3" fill="#87836f">ESCROW</text>
+      <rect x="1000" y="580" width="460" height="6" fill="#d3ccb8"/>
+      <rect x="1000" y="580" width="300" height="6" fill="#4dd9e0"/>
+    </g>
+    <text x="1000" y="640" fill="#4dd9e0">TRUST SCORE · 92</text>
+    <text x="1000" y="668" font-size="16" fill="#87836f">AUTOMATED REOCCURRENCE PREVENTION</text>
+  </g>
+
+  <text x="60" y="952" font-size="18" letter-spacing="4" fill="#87836f">GPS · SMARTCONTRACT · ESCROW · REPUTATION</text>
+  <text x="1540" y="952" font-size="18" text-anchor="end" letter-spacing="4" fill="#87836f">PLACEHOLDER VISUAL</text>
+</svg>
