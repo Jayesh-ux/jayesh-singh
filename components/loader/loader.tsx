@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { SITE } from "@/lib/data/site";
 import { prefersReducedMotion } from "@/lib/utils";
@@ -38,10 +38,11 @@ export function Loader() {
   const monogramRef = useRef<HTMLDivElement>(null);
   const circleRefs = useRef<HTMLDivElement[]>([]);
   const reduced = useReducedMotion();
+  const [done, setDone] = useState(false);
 
   useEffect(() => {
     if (reduced || prefersReducedMotion()) {
-      if (rootRef.current) rootRef.current.style.display = "none";
+      setDone(true);
       window.dispatchEvent(new Event("site:ready"));
       return;
     }
@@ -158,8 +159,8 @@ export function Loader() {
       ease: "expo.inOut",
       onStart: () => window.dispatchEvent(new Event("site:ready")),
       onComplete: () => {
-        root.remove();
         window.dispatchEvent(new Event("site:revealed"));
+        setDone(true);
       },
     });
 
@@ -168,10 +169,10 @@ export function Loader() {
       orbit.kill();
       reels.forEach((r) => r.kill());
       stoppers.forEach((s) => s.kill());
-      if (root.isConnected) root.remove();
-      window.dispatchEvent(new Event("site:ready"));
     };
   }, [reduced]);
+
+  if (done) return null;
 
   return (
     <div
