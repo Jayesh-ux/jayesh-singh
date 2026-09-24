@@ -6,7 +6,12 @@ import { SITE } from "@/lib/data/site";
 import { Reveal, SectionHeading } from "@/components/ui/section";
 import { MagneticButton } from "@/components/ui/magnetic-button";
 
-type Status = "idle" | "loading" | "success" | "error" | "unconfigured";
+type Status = "idle" | "loading" | "success" | "error";
+
+// Web3Forms — free email relay for static hosting (GitHub Pages has no API
+// route). Submissions are delivered to the inbox tied to the access key.
+const FORM_ENDPOINT = "https://api.web3forms.com/submit";
+const ACCESS_KEY = "5e763c7a-88c4-4961-92a1-97ff59facd4b";
 
 const inputCls =
   "w-full border border-line bg-ink-card/60 px-4 py-3.5 font-mono text-sm text-fg placeholder:text-mute/70 outline-none transition-colors duration-300 focus:border-accent/70";
@@ -41,23 +46,30 @@ export function Contact() {
     setStatus("loading");
     setError("");
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      const payload = new FormData();
+      payload.append("access_key", ACCESS_KEY);
+      payload.append("name", form.name);
+      payload.append("email", form.email);
+      payload.append("message", form.message);
+      if (form.company) payload.append("company", form.company);
+      if (form.projectType) payload.append("project_type", form.projectType);
+      if (form.website) payload.append("website", form.website); // honeypot
+      payload.append("subject", `[jayesh-singh] ${form.projectType || "Project"} — ${form.name}`);
+      payload.append("from_name", form.name);
+      payload.append("replyto", form.email);
+
+      const res = await fetch(FORM_ENDPOINT, { method: "POST", body: payload });
       const data = await res.json();
-      if (data.ok) {
+      if (res.ok && data.success) {
         setStatus("success");
-      } else if (data.configured === false || data.error === "NOT_CONFIGURED") {
-        setStatus("unconfigured");
+        setForm({ name: "", email: "", company: "", projectType: "", message: "", website: "" });
       } else {
         setStatus("error");
-        setError(data.error === "SEND_FAILED" ? "The message could not be delivered. Please email directly." : "Please complete the form correctly.");
+        setError("The message could not be delivered. Please email me directly.");
       }
     } catch {
       setStatus("error");
-      setError("Something went wrong. Please email directly.");
+      setError("Something went wrong. Please email me directly at " + SITE.email);
     }
   };
 
@@ -173,12 +185,6 @@ export function Contact() {
               {status === "error" && (
                 <p role="alert" className="mt-4 border border-red-500/30 bg-red-500/5 px-4 py-3 font-mono text-[12px] text-red-400">
                   ✕ {error}
-                </p>
-              )}
-              {status === "unconfigured" && (
-                <p role="status" className="mt-4 border border-accent/25 bg-accent/5 px-4 py-3 font-mono text-[12px] accent">
-                  ◈ Email delivery is not configured on this deployment. The message
-                  was not sent — please reach out directly at {SITE.email}.
                 </p>
               )}
               {status === "success" && (
